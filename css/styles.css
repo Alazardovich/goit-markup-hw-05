@@ -27,7 +27,19 @@ body {
 img {
   display: block;
 }
-
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
 .container {
   width: 1200px;
   margin-left: auto;
@@ -50,7 +62,7 @@ img {
   font-family: Raleway;
   font-weight: bold;
   font-size: 26px;
-  line-height: 1.2em;
+  line-height: 1.2;
   text-decoration: none;
   letter-spacing: 0.03em;
   color: var(--accent-color);
@@ -70,7 +82,7 @@ img {
   font-family: var(--primery-text);
   font-weight: 500;
   font-size: 14px;
-  line-height: 1.14em;
+  line-height: 1.14;
   letter-spacing: 0.02em;
   text-decoration: none;
   border-bottom: 1px solid #ececec;
@@ -81,7 +93,7 @@ img {
 .page-header .container {
   display: flex;
   justify-content: space-between;
-  align-items: flex-start;
+  /* align-items: flex-start; */
   padding: 0;
 }
 
@@ -126,7 +138,7 @@ img {
   font-family: var(--primery-text);
   font-weight: 900;
   font-size: 44px;
-  line-height: 1.36em;
+  line-height: 1.36;
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
@@ -197,7 +209,7 @@ img {
   font-family: var(--primery-text);
   font-weight: 900;
   font-size: 44px;
-  line-height: 1.36em;
+  line-height: 1.36;
   text-align: center;
   align-self: center;
   letter-spacing: 0.06em;
@@ -209,7 +221,7 @@ img {
   font-family: var(--primery-text);
   font-weight: 500;
   font-size: 14px;
-  line-height: 1.14em;
+  line-height: 1.14;
   letter-spacing: 0.02em;
 }
 
@@ -217,7 +229,7 @@ img {
   font-family: var(--primery-text);
   font-weight: bold;
   font-size: 16px;
-  line-height: 1.87em;
+  line-height: 1.87;
   align-items: center;
   text-align: center;
   letter-spacing: 0.06em;
@@ -333,7 +345,7 @@ img {
   font-family: var(--primery-text);
   font-weight: bold;
   font-size: 14px;
-  line-height: 1.14em;
+  line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
 }
@@ -342,7 +354,7 @@ img {
   color: var(--title-color);
   font-family: var(--primery-text);
   font-size: 14px;
-  line-height: 1.7em;
+  line-height: 1.7;
   letter-spacing: 0.03em;
 }
 .works {
@@ -385,7 +397,7 @@ color: #FFFFFF;
   font-family: var(--primery-text);
   font-weight: bold;
   font-size: 36px;
-  line-height: 1.16em;
+  line-height: 1.16;
   text-align: center;
   letter-spacing: 0.03em;
 
@@ -431,7 +443,7 @@ color: #FFFFFF;
 .features p {
   font-family: var(--primery-text);
   font-size: 16px;
-  line-height: 1.18em;
+  line-height: 1.18;
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--title-color);
@@ -442,7 +454,7 @@ color: #FFFFFF;
   font-family: var(--primery-text);
   font-weight: 500;
   font-size: 14px;
-  line-height: 1.14em;
+  line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--primery-color);
 }
@@ -450,7 +462,7 @@ color: #FFFFFF;
   font-family: var(--primery-text);
   font-weight: bold;
   font-size: 36px;
-  line-height: 1.16em;
+  line-height: 1.16;
   text-align: center;
   letter-spacing: 0.03em;
   margin: 0 0 50px 0;
@@ -564,7 +576,7 @@ color: #FFFFFF;
   font-family: var(--primery-text);
   font-weight: normal;
   font-size: 14px;
-  line-height: 1.71em;
+  line-height: 1.71;
   letter-spacing: 0.03em;
   margin: 0;
   padding: 60px 0 60px;
@@ -575,7 +587,7 @@ color: #FFFFFF;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
-  line-height: 1.71em;
+  line-height: 1.71;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
 }
@@ -590,7 +602,7 @@ address li {
   font-family: var(--primery-text);
   font-weight: normal;
   font-size: 14px;
-  line-height: 1.71em;
+  line-height: 1.71;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
 }
@@ -622,7 +634,7 @@ address li {
   font-family: var(--primery-text);
   font-weight: 500;
   font-size: 16px;
-  line-height: 1.62em;
+  line-height: 1.62;
   /* text-align: center; */
   letter-spacing: 0.03em;
   color: var(--primery-color);
@@ -646,7 +658,7 @@ address li {
   font-family: var(--primery-text);
   font-weight: 500;
   font-size: 16px;
-  line-height: 1.62em;
+  line-height: 1.62;
   text-align: center;
   letter-spacing: 0.03em;
 
@@ -680,7 +692,7 @@ address li {
   font-style: normal;
   font-weight: bold;
   font-size: 18px;
-  line-height: 2em;
+  line-height: 2;
   letter-spacing: 0.06em;
 }
 
@@ -688,7 +700,7 @@ address li {
   font-family: var(--primery-text);
   font-weight: normal;
   font-size: 16px;
-  line-height: 1.87em;
+  line-height: 1.87;
   letter-spacing: 0.03em;
 }
 /* оформление flexbox-index */
@@ -743,10 +755,16 @@ padding: 63px 24px;
 
 .card-thumb {
   position: relative;
-  top: 0;
-  left: 0;
-  min-width: 370px;
-  min-height: 294px;
+  bottom: 0;
+  left: 0; 
+  max-width: 370px;
+  max-height: 294px;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: hidden;
+}
+.card:hover .project-windows {
+transform: translateY(0);
 }
 
 .project-windows {
@@ -755,7 +773,10 @@ padding: 63px 24px;
   margin: 0;
   bottom: 0;
   left: 0;
-}
+  top: 0;
+  transform: translateY(100%);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+} 
 
 /* logo white */
 .studio-white {
