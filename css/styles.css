@@ -87,18 +87,19 @@ img {
   text-decoration: none;
   border-bottom: 1px solid #ececec;
   /* padding-bottom: 25px; */
-  padding-top: 24px;
+  /* padding-top: 24px; */
 }
 /* header menu */
 .page-header .container {
   display: flex;
   justify-content: space-between;
-  /* align-items: flex-start; */
+   align-items: center;
   padding: 0;
 }
 
 .display-nav-page {
   display: flex;
+  align-items: center;
 }
 .site-nav {
   display: flex;
@@ -107,20 +108,27 @@ img {
 }
 .site-nav .group {
   margin-left: 50px;
+ 
 }
 .site-nav .group:first-child {
   margin-left: 0;
-}
+} 
+
 /* Позиционированние шапки*/
-.site-nav .group::after {
-  content: "";
-  display: block;
-  padding-top: 32px;
-  padding-bottom: 0;
-  margin: 0;
-  border-bottom: 4px solid #2196F3;
-  opacity: 1;
+.site-nav .current::after {
+content: "";
+position: absolute;
+display: flex;
+width: 100%;
+height: 4px;
+bottom: -1px;
+background: #2196F3;
+justify-content: center;
 }
+.current {
+position: relative;
+}
+
 .auth-nav {
   display: flex;
   align-items: center;
@@ -195,6 +203,7 @@ img {
   top: 0;
   right: 0;
   border-radius: 50%;
+  margin: 8px;
 }
 .modal-icon {
   position: absolute;
@@ -457,6 +466,8 @@ color: #FFFFFF;
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--primery-color);
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 .company-clients {
   font-family: var(--primery-text);
