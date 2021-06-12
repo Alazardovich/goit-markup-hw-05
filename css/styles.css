@@ -512,7 +512,8 @@ img {
 .size-button-client:focus .icon-clients {
   fill: #2196f3;
 }
-.size-button-client:hover {
+.size-button-client:hover,
+.size-button-client:focus {
   border: 1px solid #2196f3;
 }
 
